@@ -95,13 +95,7 @@ export default function App() {
           <Text>Você ainda não escolheu uma foto </Text>
         )}
 
-        {foto && (
-          <Button
-            style={{ padding: 10, margin: 10 }}
-            onPress={compartilharFoto}
-            title="Compartilhar"
-          />
-        )}
+        {foto && <Button onPress={compartilharFoto} title="Compartilhar" />}
       </View>
     </>
   );
